@@ -1,0 +1,54 @@
+<template>
+	<view>
+		<view class="" style="background: #FFFFFF;margin-top: 20rpx;padding: 30rpx;display: flex;">
+			<input v-model="schoolName" style="flex: 1;" type="text" value="" placeholder="输入学校昵称"/>
+			<image v-if="show" @tap="deletbtn" src="../../../static/image/68.png" mode="" style="width: 33rpx;height: 33rpx;margin-top: 10rpx;"></image>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				schoolName:this.cacheHelper.appUser().school,
+				show:true,
+			}
+		},
+		onNavigationBarButtonTap(){
+			this.edituser()
+		},
+		methods: {
+			deletbtn(){
+				if(this.schoolName==''){
+					
+				}else{
+					this.schoolName=''
+				}
+			},
+			edituser(){
+				if(this.schoolName.length>25){
+					this.tui.toast('学校不能超过25个字符')
+				}else{
+					this.api.customeredit({
+						school:this.schoolName
+					}).then(res=>{
+						this.tui.toast('修改成功')
+						setTimeout(()=>{
+							this.cacheHelper.updateUserInfo()
+							uni.navigateBack({
+								delta:1
+							})
+						},300)
+						console.log(res)
+					})
+				}
+			}
+			
+		}
+	}
+</script>
+
+<style>
+
+</style>
