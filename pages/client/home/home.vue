@@ -9,7 +9,7 @@
 				</view>
 				<view class="topsearch" @click="topsearchBtn">
 					<image src="../../../static/image/2.png" mode="" style="width:33rpx;height:33rpx;"></image>
-					<text style="margin-left: 10rpx;font-size: 29rpx;">搜索课程名称</text>
+					<text style="margin-left: 10rpx;font-size: 29rpx;">搜索课程名称ss</text>
 				</view>
 				<view class="" @tap="searchs" style="display: flex;justify-content: flex-end;width:10%;padding-bottom: 4rpx;">
 					<image src="../../../static/image/3.png" mode="" style="width:46rpx;height:42rpx;color: #FFFFFF;margin-top: 15rpx;"></image>
