@@ -1,0 +1,792 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页,
+		// {
+		// 	"path": "pages/client/index/index",
+		// 	"style": {}
+		// },
+		{
+			"path": "pages/client/home/home",
+			"style": {
+			    "navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+		},
+		{
+			"path": "pages/client/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"blurEffect": "extralight"
+						//透明渐变导航栏 App-nvue 2.4.4+ 支持
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/client/study/study",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+		}
+        ,{
+            "path" : "pages/client/find/find",
+            "style" : {
+				"navigationBarTitleText": "发现",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/myMessage",
+            "style" : {
+				"navigationBarTitleText": "我的信息",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/editNickname",
+            "style": {
+            	"navigationBarTitleText": "修改姓名",
+            	"app-plus": {
+            		"titleNView": {
+            			"buttons": [{
+            				"text": "保存",
+            				"fontSize": "33rpx",
+            				"color": "#F27F31",
+            				"width": "90rpx"
+            			}]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/user/editGender",
+            "style": {
+            	"navigationBarTitleText": "选择性别",
+            	"app-plus": {
+            		"titleNView": {
+            			"buttons": [{
+            				"text": "保存",
+            				"fontSize": "33rpx",
+            				"color": "#F27F31",
+            				"width": "90rpx"
+            			}]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/user/editNumber",
+            "style": {
+            	"navigationBarTitleText": "更改手机号",
+            	"app-plus": {
+            		"titleNView": {
+            			"buttons": [{
+            				"text": "保存",
+            				"fontSize": "33rpx",
+            				"color": "#F27F31",
+            				"width": "90rpx"
+            			}]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/user/editSignature",
+            "style": {
+            	"navigationBarTitleText": "更改个性签名",
+            	"app-plus": {
+            		"titleNView": {
+            			"buttons": [{
+            				"text": "保存",
+            				"fontSize": "33rpx",
+            				"color": "#F27F31",
+            				"width": "90rpx"
+            			}]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/user/editSchool",
+            "style": {
+            	"navigationBarTitleText": "编辑学校",
+            	"app-plus": {
+            		"titleNView": {
+            			"buttons": [{
+            				"text": "保存",
+            				"fontSize": "33rpx",
+            				"color": "#F27F31",
+            				"width": "90rpx"
+            			}]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/user/getCoupon",
+            "style" : {
+				"navigationBarTitleText": "领取优惠劵",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/myOrder",
+            "style" : {
+				"navigationBarTitleText": "我的订单",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/orderDetails",
+            "style" : {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor":"#F29422",
+				"navigationBarTextStyle":"white",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/payPage",
+            "style" : {
+				"navigationBarTitleText": "支付"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/evaluatepj",
+            "style" : {
+				"navigationBarTitleText": "评价"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/invitehy",
+            "style" : {
+				"navigationBarTitleText": "邀请好友"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/myWallet",
+            "style" : {
+				"navigationBarTitleText": "我的钱包"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/wialletUp",
+            "style" : {
+				"navigationBarTitleText": "余额充值"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/integralShop",
+            "style" : {
+				"navigationBarTitleText": "积分商城",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "订单",
+							"fontSize": "32rpx",
+							"color": "#F27F31",
+							"width": "100rpx",
+							"height":"91rpx"
+						}]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/myCoupon",
+            "style" : {
+				"navigationBarTitleText": "我的优惠劵"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/jfgoodsdetais",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"titleText": "商品详情"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/sureOrder",
+            "style" : {
+				"navigationBarTitleText": "确认订单"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/myContinuexb",
+            "style" : {
+				"navigationBarTitleText": "我的续报"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/servicekf",
+            "style" : {
+				"navigationBarTitleText": "客服中心"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/feedback",
+            "style" : {
+				"navigationBarTitleText": "意见反馈"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/setting",
+            "style" : {
+				"navigationBarTitleText": "设置"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/editpassword",
+            "style" : {
+				"navigationBarTitleText": "设置密码"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/newAddress",
+            "style" : {
+				"navigationBarTitleText": "收货地址"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/editAddress",
+            "style" : {
+				"navigationBarTitleText": "地址管理"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/AboutUs",
+            "style" : {
+				"navigationBarTitleText": "关于我们"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/Myjifen",
+            "style" : {
+				"navigationBarTitleText": "我的积分"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/Mycourse",
+            "style" : {
+				"navigationBarTitleText": "我的课程"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/courseDetail",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"titleText": "课程详情"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/homeWork",
+            "style" : {
+				"navigationBarTitleText": "我的作业"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/myJob",
+            "style" : {
+				"navigationBarTitleText": "我的作业"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/xiehomework",
+            "style" : {
+				"navigationBarTitleText": "我的作业"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/wrongWrok",
+            "style" : {
+				"navigationBarTitleText": "错题本",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/myWrongWrok",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/hdAnswer",
+            "style": {
+                "navigationBarTitleText": "互动答疑",
+                "app-plus": {
+            		"bounce": "none", // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+            		"titleNView": {
+            			"searchInput": {
+            			   "backgroundColor": "#F0F0F0",
+            			   "borderRadius": "30rpx",
+            			   "placeholder": "输入搜索内容",
+						   "autoFocus":false,
+						   "align":"left",
+						   "width": "568rpx"
+            			},
+						"buttons": [
+							// 右边
+							{
+								"color": "rgba(153,153,153,1)",
+								"colorPressed": "pink",
+								"float": "right",
+								"fontSize": "29rpx", //按钮上文字的大小
+								"width": "30rpx"
+							}
+						]
+            		}
+                }
+            }
+        }
+        ,{
+            "path" : "pages/client/study/quizzerTw",
+            "style" : {
+				"navigationBarTitleText": "提问"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/chooseClass",
+            "style" : {
+				"navigationBarTitleText": "选择年级"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/chooseKemu",
+            "style" : {
+				"navigationBarTitleText": "选择科目"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/answerDetals",
+            "style" : {
+				"navigationBarTitleText": "问题详情"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/writeDan",
+            "style" : {
+				"navigationBarTitleText": "写答案"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/myStreaming",
+            "style" : {
+				"navigationBarTitleText": "我的点播课",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/myEvaluate",
+            "style" : {
+				"navigationBarTitleText": "我的评价",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/myAttention",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/dibbleSeeding",
+            "style" : {
+				"navigationBarTitleText": "点播课堂",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/classDetails",
+            "style": {
+            	"app-plus": {
+            		"titleNView": {
+            			"type": "transparent",
+            			"titleText": "课程详情"
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/home/teacherDetal",
+            "style" : {
+				"navigationBarTitleText": "老师详情",
+				"navigationBarBackgroundColor": "#F27F31",
+				"navigationBarTextStyle": "white",
+				// "disableScroll": true// 禁止滚动, 解决scroll-view在Android小程序卡顿的问题
+				// "enablePullDownRefresh" : false, // 不开启下拉刷新, 默认就是false
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/confirmOrder",
+            "style" : {
+				"navigationBarTitleText": "确认订单",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/referrerDetail",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"titleText": "课程详情"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/search",
+            "style": {
+            	"bounce": "none", // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+            	"app-plus": {
+            		"titleNView": {
+            			//透明渐变导航栏 App-nvue 2.4.4+ 支持
+            			"searchInput": {
+            				"borderRadius": "29rpx", //输入框圆角
+            				"placeholder": "搜索课程",
+            				//disable时点击输入框不置焦，可以跳到新页面搜索
+            				"align": "left",
+            				"backgroundColor": "rgba(245,245,245,1)",
+            				"autoFocus": true,
+            				"width": "400rpx"
+            			},
+            			"buttons": [
+            				// 右边
+            				{
+            					"color": "rgba(153,153,153,1)",
+            					"colorPressed": "pink",
+            					"fontSize": "29rpx", //按钮上文字的大小
+            					"text": "搜索",
+            					"width": "100rpx",
+            					"borderRadius": "20rpx",
+            					"background": "#FE374E"
+            				}
+            			]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/home/location",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/information",
+            "style" : {
+				"navigationBarTitleText": "消息"
+			}
+        }
+        ,{
+            "path" : "pages/client/home/appraisal",
+            "style" : {
+            	"app-plus": {
+            		"titleNView": {
+            			"type": "transparent"
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/home/chooseType",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/enterAppraisal",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/dtFinish",
+            "style" : {
+				"navigationBarTitleText": "答题完毕"
+			}
+        }
+		,{
+		    "path" : "pages/client/login/login",
+		    "style" : {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		{
+		    "path" : "pages/client/login/register/register",
+		    "style" : {
+			}
+		},
+		{
+		    "path" : "pages/client/login/forgetpassword/forgetpassword",
+		    "style" : {
+			}
+		}
+        ,{
+            "path" : "pages/client/user/editGrade",
+            "style": {
+            	"navigationBarTitleText": "修改年级",
+            	"app-plus": {
+            		"titleNView": {
+            			"buttons": [{
+            				"text": "保存",
+            				"fontSize": "33rpx",
+            				"color": "#F27F31",
+            				"width": "90rpx"
+            			}]
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/home/teacherjoin",
+            "style" : {
+				"navigationBarTitleText": "老师信息"
+			}
+        }
+        ,{
+            "path" : "pages/client/home/teacherpass",
+            "style" : {
+				"navigationBarTitleText": "审核结果"
+			}
+        }
+        ,{
+            "path" : "pages/client/find/institutionDetails",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/teacherlook",
+            "style" : {
+				"navigationBarTitleText": "老师信息"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/evaluationpage",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"titleText": "测评报告"
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/mystreamingDetals",
+            "style" : {
+            	"app-plus": {
+            		"titleNView": {
+            			"type": "transparent",
+            			"titleText": "课程详情"
+            		}
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/client/user/protocols",
+            "style" : {
+				"navigationBarTitleText": "用户协议"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/privacyxieyi",
+            "style" : {
+				"navigationBarTitleText": "隐私政策"
+			}
+        }
+        ,{
+            "path" : "pages/client/home/videosd",
+            "style" : {
+				"navigationBarTitleText": "视频详情"
+			}
+        }
+        ,{
+            "path" : "pages/client/user/Integralorder",
+            "style" : {
+				"navigationBarTitleText": "积分订单",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/user/integralDetails",
+            "style" : {
+				"navigationBarTitleText": "积分订单详情"
+			}
+        }
+        ,{
+            "path" : "pages/client/home/bannerdtals",
+            "style" : {
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/evaluationlist",
+            "style" : {
+				"navigationBarTitleText": "测评记录",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/study/evaluationanswer",
+            "style" : {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/messageList",
+            "style" : {
+				"navigationBarTitleText": "通知列表",
+				"app-plus": {
+					"bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+				}
+			}
+        }
+        ,{
+            "path" : "pages/client/home/systempage",
+            "style" : {
+				"navigationBarTitleText": "消息详情"
+			}
+        }
+        ,{
+            "path" : "pages/client/study/titimuyulan",
+            "style" :{
+                "navigationBarTitleText": "作业详情"
+            }
+            
+        }
+        ,{
+            "path" : "pages/client/home/cepingtail/cepingtail",
+            "style" :                                                                                    
+            {
+               "navigationBarTitleText": "详情"
+            }
+            
+        }
+        ,{
+            "path" : "pages/client/user/ioswialletUp",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "余额充值",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "@/components/$1/$1.vue"
+		}
+	},
+	"tabBar": {
+		"color": "#7a7e83",
+		"selectedColor": "#F27F31",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/client/home/home",
+				"text": "首页",
+				"iconPath": "static/image/9.png",
+				"selectedIconPath": "static/image/8.png"
+			},
+
+			{
+				"pagePath": "pages/client/study/study",
+				"text": "学习",
+				"iconPath": "static/image/13.png",
+				"selectedIconPath": "static/image/10.png"
+			},
+			{
+				"pagePath": "pages/client/find/find",
+				"text": "发现",
+				"iconPath": "static/image/11.png",
+				"selectedIconPath": "static/image/14.png"
+			},
+			{
+				"pagePath": "pages/client/user/user",
+				"text": "我的",
+				"iconPath": "static/image/12.png",
+				"selectedIconPath": "static/image/15.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#fbf9fe"
+	}
+}

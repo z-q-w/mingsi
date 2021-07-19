@@ -1,0 +1,12 @@
+diff a/pages.json b/pages.json	(rejected hunks)
+@@ -377,7 +377,9 @@
+ 		},
+ 		{
+ 			"path": "pages/client/home/payOrder",
+-			"style": {}
++			"style": {
++				"navigationBarTitleText": "确认订单"
++			}
+ 		}
+ 
+ 	],
